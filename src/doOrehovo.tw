@@ -6,6 +6,10 @@
     "start": "Begin"
 }
 :: Story Stylesheet [stylesheet]
+body tw-story {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/bg.jpg');
+  background-repeat: auto;
+}
 img {
   width: 100%; !important
   max-width: 100%; !important
@@ -79,6 +83,8 @@ img {
 Най-накрая разбраха къде ще спят довечера и изморени и гладни се отправиха към къщата на леля Костадинка. Настаниха се, взеха душ и Жоро сготви вкусни паста, с която нагостиха и леля Костадинка. Легнаха си рано и се приготвиха за [[приключението|OrehovoNextMorning]], което ги очакваше.
 ]
 
+<img alt="снимка на Ицо и Жоро в центъра на село Орехово" src="https://lh3.googleusercontent.com/pw/ACtC-3fOMhPRDsoOOGYhmMER-LuuMYNq6fxQksGnmi-9i0cwLHFw7cCuWPACfnMc-RWrCnHXyEF3bDWAU0X5WdJ1H3FKrQ8kG9pxElHxkoj6VVgGmM-kbfjILkJUphF_LS1DSsQgROwQvt0-4lK74AEkmbWE3A=w2156-h1616-no?authuser=0">
+
 ::OrehovoGrandpa
 (unless: $orehovoGrapndaDone)[
 Христо прецени, че дядото няма как да не познава всички в селото и се отдели от групата, за да го заговори:
@@ -91,14 +97,17 @@ img {
 - Да те питам, къде е къщата на леля Костадинка?
 - Ам чи знам я, тя е в оня край на селото, нависоко. Ама не мога да се присетя, я ми помогни (link-reveal: "като кажеш:")[
 (link-repeat: "Какво ще ядете тази вечер?")[(set: $orehovoDinner to (prompt: "Дай отговор", ""))]
-(event: when $orehovoDinner is "спагети")[
+(event: when (lowercase: (string: $orehovoDinner)) is "спагети")[
 *- Оттука се връщате назад от където сте дошли, и хващате първата вляво нагоре. Обаче не си спомням първата ли втората ли къща беше. Най-добре разпитайте още.*
 (set: $orehovoGrapndaDone to true)
+]]
 [[Върни се при приятелите|OrehovoCenter]]
-]]](else:)[
+](else:)[
 - Нали ти казах: *Оттука се връщате назад от където сте дошли и хващате първата вляво нагоре.*
 [[Върни се при приятелите|OrehovoCenter]]
 ]
+
+<img alt="снимка на село Орехово" src="https://lh3.googleusercontent.com/pw/ACtC-3fsIb5QN9RS7aTmMRJQ6AtHD_Ini_MfHosMsTOQUfOTU-JzWaVfDJA28XkvyqZimphmRyZR__jRUqLSXxhiX3pwkAiDD9SqL6wxy1GRSINRxJ4THKXtVq2gbZh2ItcFEYuw6VuhAGWhQO54vmdG6sb5mA=w960-h497-no?authuser=0">
 
 ::OrehovoForestman
 На Жоро му се стори интересен чичото в камуфлажни дрехи и препасан нож и се приближи към него:
@@ -116,10 +125,12 @@ img {
 ]
 [[Върни се на центъра|OrehovoCenter]]
 
+<img alt="снимка на село Орехово 2" src="https://lh3.googleusercontent.com/pw/ACtC-3dowqzlAAqnF7tCsUaB0DU1iSzGcNoT9qXK-Ud1hD8TWGCOn5E_ZcNT0yVureRkkiyPPz9clTy1tDwgeGZM7ihlKWaRqCy4cUOuCH4IygVR_Lp-DLzlROd7VqI249W_arBANfUiYDpQIlWLO8CtJdwT9w=w2156-h1616-no?authuser=0">
+
 ::OrehovoShop
 Жоро се отправи към магазина бутна тежката метална соц врата, отмести изцапаните и захабели цветни ленти против мухи над вратата и влезе в корекома. Зад тезгяха стоеше отегчена лелка решаваща судоку. Вдигна поглед и рече:
 (link-repeat: "- Какво ще искаш?")[(set: $orehovoShopItem to (prompt: "Дай отговор", ""))]
-(event: when $orehovoShopItem is in (a: "цигара", "цигари", "една цигара", "пакет цигари", "кутия цигари"))[
+(event: when (lowercase: (string: $orehovoShopItem)) is in (a: "цигара", "цигари", "една цигара", "пакет цигари", "кутия цигари"))[
 *- Искам (print: $orehovoShopItem).*
 *- Ето, и ги откажи.*
 (set: $orehovoCigarTaken to true)
