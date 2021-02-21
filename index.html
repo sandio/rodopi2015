@@ -9,20 +9,23 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Родоπи 2015.</tw-noscript></noscript></tw-story>
-<!-- UUID://D9AA9C6D-B1E4-4127-B20C-FA0977FED253// --><tw-storydata name="Родоπи 2015" startnode="1" creator="Tweego" creator-version="2.1.1" ifid="D9AA9C6D-B1E4-4127-B20C-FA0977FED253" zoom="1" format="Harlowe" format-version="3.2.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Begin" tags="" position="100,100" size="100,100">Родоπи 2015
+<!-- UUID://D9AA9C6D-B1E4-4127-B20C-FA0977FED253// --><tw-storydata name="Родоπи 2015" startnode="2" creator="Tweego" creator-version="2.1.1" ifid="D9AA9C6D-B1E4-4127-B20C-FA0977FED253" zoom="1" format="Harlowe" format-version="3.2.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">img {
+  width: 100%; !important
+  max-width: 100%; !important
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="OrehovoNextMorning" tags="" position="100,100" size="100,100"></tw-passagedata><tw-passagedata pid="2" name="Begin" tags="" position="225,100" size="100,100">Родоπи 2015
 Първа глава
 
 Малко преди началото на лятото, Маги си помечта за приключение. Една вечер след работа, прибирайки се към вкъщи, реши да си купи книга. В книжарницата случайно попадна на туристическа карта на Родопите.
 Да вземе ли картата? (cycling-link: bind $mapTaken, &quot;Не&quot;, &quot;Да&quot;)
-[[Отиди на касата|Teller]]</tw-passagedata><tw-passagedata pid="2" name="Teller" tags="" position="225,100" size="100,100">(if: $mapTaken is &quot;Да&quot;)[Маги плати картата, симпатичният продавач ѝ намигна и тя напусна книжарницата. Ентусиазирана се обади на своя приятел Жоро и половин час по-късно двамата [[пиеха бира|Beer]].]
+[[Отиди на касата|Teller]]</tw-passagedata><tw-passagedata pid="3" name="Teller" tags="" position="350,100" size="100,100">(if: $mapTaken is &quot;Да&quot;)[Маги плати картата, симпатичният продавач ѝ намигна и тя напусна книжарницата. Ентусиазирана се обади на своя приятел Жоро и половин час по-късно двамата [[пиеха бира|Beer]].]
 
-(else: )[Насочвайки се към изхода на пътя ѝ се изпречи красив гайдар сякаш слязъл от планината исполин . [[Върни Маги в книжарницата|Begin]].]</tw-passagedata><tw-passagedata pid="3" name="Beer" tags="" position="350,100" size="100,100">Маги сподели на Жоро, че е купила карта на Родопите и им хрумна идеята да направят пътешествие с раници из Планината. Избраха дата и се чудеха дали Христо може да се присъедини към тях и му се (link-reveal: &quot;обадиха.&quot;)[
+(else: )[Насочвайки се към изхода на пътя ѝ се изпречи красив гайдар сякаш слязъл от планината исполин . [[Върни Маги в книжарницата|Begin]].]</tw-passagedata><tw-passagedata pid="4" name="Beer" tags="" position="475,100" size="100,100">Маги сподели на Жоро, че е купила карта на Родопите и им хрумна идеята да направят пътешествие с раници из Планината. Избраха дата и се чудеха дали Христо може да се присъедини към тях и му се (link-reveal: &quot;обадиха.&quot;)[
 
 Разбира се, Христо не отговори веднага на телефонното обаждане, но по-късно потвърди, че може да замине на:
 (cycling-link: bind $day, &quot;14&quot;, &quot;15&quot;, &quot;16&quot;, &quot;17&quot;, &quot;18&quot;, &quot;19&quot;, &quot;20&quot;, &quot;21&quot;, &quot;22&quot;, &quot;23&quot;, &quot;24&quot;, &quot;25&quot;, &quot;26&quot;, &quot;27&quot;, &quot;28&quot;, &quot;29&quot;, &quot;30&quot;, &quot;31&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;10&quot;, &quot;11&quot;, &quot;12&quot;, &quot;13&quot;) (cycling-link: bind $month, &quot;Април&quot;, &quot;Май&quot;, &quot;Юни&quot;, &quot;Юли&quot;, &quot;Август&quot;, &quot;Септември&quot;) (cycling-link: bind $year, &quot;1988&quot;, &quot;1990&quot;, &quot;2000&quot;, &quot;2010&quot;, &quot;2011&quot;, &quot;2012&quot;, &quot;2013&quot;, &quot;2014&quot;, &quot;2015&quot;)
 
 (event: when $day is &quot;1&quot; and $month is &quot;Август&quot; and $year is &quot;2015&quot;)[[[Заминаваме!|Baggage]]]
-]</tw-passagedata><tw-passagedata pid="4" name="Baggage" tags="" position="475,100" size="100,100">Неусетно дойде датата на заминаване. Началната точка бе Пловдив. В деня на тръгването, тримата приятели осъзнаха, че нямат всичко необходимо за прехода. Решиха, че най-доброто място за това е Декатлон. Отидоха с такси. Всеки от тях имаше място в раницата за по два допълнителни предмета, който да купи вземе със себе си.
+]</tw-passagedata><tw-passagedata pid="5" name="Baggage" tags="" position="600,100" size="100,100">Неусетно дойде датата на заминаване. Началната точка бе Пловдив. В деня на тръгването, тримата приятели осъзнаха, че нямат всичко необходимо за прехода. Решиха, че най-доброто място за това е Декатлон. Отидоха с такси. Всеки от тях имаше място в раницата за по два допълнителни предмета, който да купи вземе със себе си.
 Маги си избра:
 (cycling-link: bind $item1, &quot;ракия&quot;, &quot;игла и конец&quot;, &quot;спрей за мечки&quot;, &quot;дъждобран&quot;)
 (cycling-link: bind $item2, &quot;ракия&quot;, &quot;игла и конец&quot;, &quot;спрей за мечки&quot;, &quot;дъждобран&quot;)
@@ -33,15 +36,65 @@
 (cycling-link: bind $item5, &quot;нож&quot;, &quot;батерии за GPS&quot;, &quot;котлонче&quot;, &quot;протеинови барчета&quot;)
 (cycling-link: bind $item6, &quot;нож&quot;, &quot;батерии за GPS&quot;, &quot;котлонче&quot;, &quot;протеинови барчета&quot;)
 
-Доволни приятелите излязоха от магазина, но осъзнаха, че времето е напреднало. Оказа се, че и последният автобус към Хвойна е тръгнал без тях. Христо веднага пресметна възможностите и се сети, че неговият приятел Митя този ден пътува към селото си - Павелско и може да ги вземе. Христо се обади на Миткя и той се съгласи да им направи услуга при едно условие. Христо трябваше да отговори на [[въпроса на Миткя|Mitko]]</tw-passagedata><tw-passagedata pid="5" name="Mitko" tags="" position="600,100" size="100,100">(set: $items to (a: $item1, $item2, $item3, $item4, $item5, $item6))
+Доволни приятелите излязоха от магазина, но осъзнаха, че времето е напреднало. Оказа се, че и последният автобус към Хвойна е тръгнал без тях. Христо веднага пресметна възможностите и се сети, че неговият приятел Митя този ден пътува към селото си - Павелско и може да ги вземе. Христо се обади на Миткя и той се съгласи да им направи услуга при едно условие. Христо трябваше да отговори на [[въпроса на Миткя|Mitko]]</tw-passagedata><tw-passagedata pid="6" name="Mitko" tags="" position="725,100" size="100,100">(set: $items to (a: $item1, $item2, $item3, $item4, $item5, $item6))
 
 Кой съм аз? (link-repeat: &quot;Дай отговор.&quot;)[(set: $name to (prompt: &quot;Проба?&quot;, &quot;2&quot;))]
 (event: when $name is &quot;1&quot;)[
 &quot;Точно така, ще ви взема. Какво купихте от Декатлон?&quot;
 (print: $items)
 [[Хвойна|Hvoina]]
-]</tw-passagedata><tw-passagedata pid="6" name="Hvoina" tags="" position="725,100" size="100,100">В ранния следобед Митко остави тримата приятели в село Хвойна. Те нарамиха раниците, затегнаха обувките и напълниха манерките с прясна студена планинска вода от небезизвестеата чешма.
-(if: &quot;манерка&quot; is in $items)[*Христо напълни допълнителната си манерка.*]</tw-passagedata></tw-storydata>
+]</tw-passagedata><tw-passagedata pid="7" name="Hvoina" tags="" position="850,100" size="100,100">В ранния следобед Митко остави тримата приятели в село Хвойна. Те нарамиха раниците, затегнаха обувките и напълниха манерките с прясна студена планинска вода от небезизвестеата чешма.
+(if: &quot;манерка&quot; is in $items)[*Христо напълни допълнителната си манерка.*]
+
+Днес ги очакваше лек преход ( по асфалт :) ) от село Хвойна до село Орехово. Извървяха пътя бързо и в късен следобед се озоваха на [[центъра на селото|OrehovoCenter]].
+
+&lt;img alt=&quot;снимка на Жоро на чешмата в село Хвойна&quot; src=&quot;https://lh3.googleusercontent.com/pw/ACtC-3c5wRDfx7LKV0IhVycmrl9l2qDs31jx0WTYSvMfWrNNcb8bZMOKPN4ylzEANe5gZIBWO-wLuGD_7gPL3VJzD3r5agR3eWDCRM2BHs94zuqz9cv1iDw4mO8x31iRFsaIjBAYshiKx47mxnThIlooMTEWxw=w1600-h1200-no?authuser=0&quot;&gt;
+
+(set: $orehovoGrapndaDone to false, $orehovoForestmanDone to false, $orehovoCigarTaken to false)</tw-passagedata><tw-passagedata pid="8" name="OrehovoCenter" tags="" position="975,100" size="100,100">Не знаеха къде се намира къщата на лелята, която бяха запазили. Поогледаха се и видяха:
+* [[на една пейка седеше прегърбен дядо с бастунче|OrehovoGrandpa]]
+* [[на селското кафе на пластмасов стол горският пушеше цигара|OrehovoForestman]]
+* [[на отсрещният ъгъл на мегдана беше хранителния магазин|OrehovoShop]]
+(if: $orehovoGrapndaDone and $orehovoForestmanDone)[
+Най-накрая разбраха къде ще спят довечера и изморени и гладни се отправиха към къщата на леля Костадинка. Настаниха се, взеха душ и Жоро сготви вкусни паста, с която нагостиха и леля Костадинка. Легнаха си рано и се приготвиха за [[приключението|OrehovoNextMorning]], което ги очакваше.
+]</tw-passagedata><tw-passagedata pid="9" name="OrehovoGrandpa" tags="" position="1100,100" size="100,100">(unless: $orehovoGrapndaDone)[
+Христо прецени, че дядото няма как да не познава всички в селото и се отдели от групата, за да го заговори:
+- Добър ден, как сте?
+- Здравей, момче, е как да съм?
+- Ами добре изглеждаш и селото ви е чудничко.
+- Хубаво е, ама остана без хора. Младите слязоха в града или отидоха по чужбина. Кои сте вие? На туризъм ли сте?
+- Ние сме трима приятели и сме тръгнали на преход към Смолян.
+- Бре, че то Смолян много далеч, бе!
+- Да те питам, къде е къщата на леля Костадинка?
+- Ам чи знам я, тя е в оня край на селото, нависоко. Ама не мога да се присетя, я ми помогни (link-reveal: &quot;като кажеш:&quot;)[
+(link-repeat: &quot;Какво ще ядете тази вечер?&quot;)[(set: $orehovoDinner to (prompt: &quot;Дай отговор&quot;, &quot;&quot;))]
+(event: when $orehovoDinner is &quot;спагети&quot;)[
+*- Оттука се връщате назад от където сте дошли, и хващате първата вляво нагоре. Обаче не си спомням първата ли втората ли къща беше. Най-добре разпитайте още.*
+(set: $orehovoGrapndaDone to true)
+[[Върни се при приятелите|OrehovoCenter]]
+]]](else:)[
+- Нали ти казах: *Оттука се връщате назад от където сте дошли и хващате първата вляво нагоре.*
+[[Върни се при приятелите|OrehovoCenter]]
+]</tw-passagedata><tw-passagedata pid="10" name="OrehovoForestman" tags="" position="1225,100" size="100,100">На Жоро му се стори интересен чичото в камуфлажни дрехи и препасан нож и се приближи към него:
+- Здравейте, може ли да ви питам нещо?
+- Питай момче, ама нали знаеш информацията е ценно нещо!
+- Хаха, знам, знам. Добре, тука сме тръгнали на туризъм и нощеска ще преспим в това хубаво село. Да знаете къде е къщата на леля Костадинка?
+- Знам, ама ти цигара имаш ли? Че ми свършиха моите и няма с какво да си изпия кафето.
+(if: $orehovoCigarTaken)[
+*- Имам, имам. Заповядай.*
+*- Благодаря ти, момче. Сега ме слушай внимателно: Къщата е втората, с висока ограда и дървена порта.*
+(set: $orehovoForestmanDone to true)
+](else:)[
+- Нямам.
+- Е като нямаш как да ни върви приказката.
+]
+[[Върни се на центъра|OrehovoCenter]]</tw-passagedata><tw-passagedata pid="11" name="OrehovoShop" tags="" position="100,225" size="100,100">Жоро се отправи към магазина бутна тежката метална соц врата, отмести изцапаните и захабели цветни ленти против мухи над вратата и влезе в корекома. Зад тезгяха стоеше отегчена лелка решаваща судоку. Вдигна поглед и рече:
+(link-repeat: &quot;- Какво ще искаш?&quot;)[(set: $orehovoShopItem to (prompt: &quot;Дай отговор&quot;, &quot;&quot;))]
+(event: when $orehovoShopItem is in (a: &quot;цигара&quot;, &quot;цигари&quot;, &quot;една цигара&quot;, &quot;пакет цигари&quot;, &quot;кутия цигари&quot;))[
+*- Искам (print: $orehovoShopItem).*
+*- Ето, и ги откажи.*
+(set: $orehovoCigarTaken to true)
+]
+[[Иди на мегдана|OrehovoCenter]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
