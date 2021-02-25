@@ -1,1 +1,47 @@
 :: OrehovoNextMorning
+до Чудните мостове - {(link:"Запиши игра")[
+  (if:(save-game:"Slot A"))[
+    Играта е записана!
+  ](else: )[
+    Съжалявам, не успях да запиша играта.
+  ]
+]}
+
+Героите се събудиха рано, приготвиха багажа си - Маги и Ицо набързо, а Жоро старателно сортира принадлежностите си в отделни платнени кесийки и ги завърза с ластички. Слязоха на закуска. На масата ги чакаха мазни мекички и топъл чай. Докато похапваха, обсъдиха днешния маршрут, а Жоро подготви навигацията, като я извади от кесийката, в която беше я пъхнал само преди 5 минути. :)
+
+Целта беше ясна, по обед да стигнат хижа Персенк и да обядват там. След закуска [[напуснаха село Орехово|PersenkSheep]].
+
+<img alt="снимка на Ицо и Жоро и Маги на изхода на село Орехово" src="https://lh3.googleusercontent.com/pw/ACtC-3c_dsMvq-Vt7bwYIu_o7GsumqTNkp5WoDS5QyrSkjdVswpCzs0WGzeGtPgGkxO3ASeUy7RvOaY59UG2SoWC3-Rz14jZHg6hdDZvwam6PX7sqnoDfpDCIpfOcYzKtrwuGMjA_FX9YivnhEaLxmJHkBSK3Q=w853-h640-no?authuser=0">
+
+:: PersenkSheep
+Денят беше слънчев и топъл. Раниците бързо започнаха да тежат и стомасите да къркорят. По пътя Жорко видя джанка и разбира се не я пропусна. А Маги и Ицо се възползваха от възможността да си починат за малко. Намазаха се със слънцезащитен крем и се поразсъблякоха. Събраха сили и тръгнаха по стръмния склон [[водещ към Персенк|PersenkStick]].
+
+<img alt="снимка на Ицо и Жоро мажещи се с крем към Персенк" src="https://lh3.googleusercontent.com/pw/ACtC-3dCVA3dOooQtLMGyXkaUA0Q4192YEbCJcc0govdMh6F_v7Frx1H_95jzJOwC5RtlqgbiQ14NC_plU32vVNoOeQK4cv1-_qSyNYfKkFZU6Of4tcACQobOqQ69krzSkGdIbH-hOWhuI_PNy9MuWRLLg50Lg=w2156-h1616-no?authuser=0">
+
+:: PersenkStick
+Пътеката към Персенк бързо умори приятелите, но на Маги и Жоро щеките помагаха. Христо се замисли дали и той няма в багажи си сгънати щеки и отвори раницата си. Вътре видя: *"(print: $item3) и (print: $item4)"*. {(if: "щеки" is in $items)[
+*Той взе щеките и ги разпъна.* Продължиха с добро темпо [[до целта|PersenkLunch]], въпреки, че пътеката бе трудно проходима.
+
+<img alt="снимка на Ицо проправящ път към Персенк" src="https://lh3.googleusercontent.com/pw/ACtC-3dLFoSGGEkNCEMizsgtzH4c-rptK0-AijoAALZoBKd-F58cXbX8CtMd8HeD1anpplH1xg2dN7UG10otvCJqMXQdtoWNHa0CBpCmSHb-XcOaFbrUFv48slY3vl4aXWAxHndGpWgkidwXISBSep6xvsnV2Q=w1212-h1616-no?authuser=0">
+](else-if: "нож" is in $items)[
+*Нищо полезно, което да му помогне. Жоро обаче имаше нож.* Огледа се и видя паднали клони. Бързо намери подходящ клон за направата на кол, изчисти го от издатъци, а отгоре му намотаха синьо въженце за простиране. Получи се идеален кол, който помогна на Христо да стигне [[до върха|PersenkLunch]], въпреки падналите дървета.
+
+<img alt="снимка на Жоро чистещ кол към Персенк" src="https://lh3.googleusercontent.com/pw/ACtC-3euElc5z9OI41ormxnCz_Xv0AUlLPrnsNLDEAbIN0BH51zFLPQCjnQuKnyGVktzF1s5INqKe-_BfzO97uOfnWvTrb6fY--wQTXzgjB4p8zpMBo9oMBibWi0-t43J5WWcgtyuAL93t0YkVhsFN2nGFZIrQ=w1212-h1616-no?authuser=0">
+
+<img alt="снимка на Ицо и Жоро омотаващи кола с въже към Персенк" src="https://lh3.googleusercontent.com/pw/ACtC-3c8xaAZr90rsEmkg0gZoRO4W6cL2OVk30szRo1PrL6DeKYCGfB202cQAMdvLcBecVuTKxRPh40eE85gv9rN_mHL3mD2r_80tjQTkf5Q5GvGFz9_G1AzFcJ0gDahevfVSFbp-0E1-weEg9_fh4x6EEhPsg=w1212-h1616-no?authuser=0">
+](else:)[
+*Нищо полезно, което да му помогне.*<br/>
+Извън пътеката, между дърветата се чуха звуци от стъпки. Приятелите погледнаха и от храсталака изневиделица изскочи баба със забрадка, препасана торба за събиране на гъби и тояга в ръка. Имаше голям цирей на носа и беше странно усмихната:<br/>
+- Дееецааа, добър ви ден. Баба ви Сладунка е тръгнала да бере манатарки, обаче похапва и от другите видове, защото ги познава!<br/>
+- Добър ден. Радваме се да ви срещнем и каква ви е хубава гората. - каза Маги.<br/>
+- Хубава е, ама и трудно се ходи из нея. Абе момче, ти можеш ли без тояга да тръгнеш по тез чукари. - обърна се бабата към Христо.<br/>
+- Ами бабо за пръв път ми е и ми е трудно.<br/>
+- Нека баба ти Сладунка да ти каже - сефтето винаги боли! За да не ти е тежко, на ти моята тояга. Обаче чакай да те питам, (link-repeat: "на манатарката двойникът какъв цвят придобива като се разчупи?")[(set: $persenkGrandma to (prompt: "Дай отговор", ""))]
+{(event: when (lowercase: (string: $persenkGrandma)) is in (a: "син", "синьо", "сив", "сиво"))[
+*Браво, момче, ето ти моята тояга.* Хайде, тръгвайте, че [[път ви чака|PersenkLunch]].
+
+<img alt="снимка на Ицо и Жоро проправящи път към Персенк" src="https://lh3.googleusercontent.com/pw/ACtC-3dRZ4EV-7kf0Kgqkzf_El9yyr-qNRF2JARJ9Emh4m_GDiEja-JWBi2kv3s972MH0BQKPwLQX0SAfNXPVm5BqboKsYihC1fUu2s-lOFVh4mkOcBa4P5zgIPqk7ZDc3l6cUt5s8JLHlG9OGFuIDWTkbF78g=w1212-h1616-no?authuser=0">
+]}
+]}
+
+:: PersenkLunch
