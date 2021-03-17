@@ -53,7 +53,9 @@ img {
 
 &lt;img alt=&quot;снимка на Ицо и Жоро проправящи път към Персенк&quot; src=&quot;https://lh3.googleusercontent.com/pw/ACtC-3dRZ4EV-7kf0Kgqkzf_El9yyr-qNRF2JARJ9Emh4m_GDiEja-JWBi2kv3s972MH0BQKPwLQX0SAfNXPVm5BqboKsYihC1fUu2s-lOFVh4mkOcBa4P5zgIPqk7ZDc3l6cUt5s8JLHlG9OGFuIDWTkbF78g=w1212-h1616-no?authuser=0&quot;&gt;
 ]}
-]}</tw-passagedata><tw-passagedata pid="4" name="PersenkLunch" tags="" position="475,100" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="Begin" tags="" position="600,100" size="100,100">Родоπи 2015
+]}</tw-passagedata><tw-passagedata pid="4" name="PersenkLunch" tags="" position="475,100" size="100,100">Със сетни сили и гладни, героите достигнаха хижа Персенк. Огледаха се и видяха множество сгради, някои от които разрушени и изоставени, но забелязаха хора на сградата на най-високо. Въздъхнаха и се отправиха към нея. Посрещна ги млада хижарка, която ги нагости с вкусен боб и препечен хляб. Нахраниха се добре, нарамиха раниците и отново тръгнаха, защото денят напредваше. Очакваше ги Римският път, за който бяха чели, но ги изненада.
+
+&lt;img alt=&quot;снимка на Римския път&quot; src=&quot;https://lh3.googleusercontent.com/pw/ACtC-3c8YNfvFoy49VCcpxLivohSDUoFp0kPYUVIFBVSCk5Q_DAIi1ElW5V_vGXFTFhZaG3ufa9Igg_5ObBXP4EOM4FHOwMmb5Fxjpyd9vTsAPIRjn3LoffcSi67SlFD67Tjnoc3CYGlNz0DYU51NmrHeFdZow=w1212-h1616-no?authuser=0&quot;&gt;</tw-passagedata><tw-passagedata pid="5" name="Begin" tags="" position="600,100" size="100,100">Родоπи 2015
 До Орехово - {(link: &quot;Зареди игра&quot;)[(load-game:&quot;Slot A&quot;)]}
 
 Малко преди началото на лятото, Маги си помечта за приключение. Една вечер след работа, прибирайки се към вкъщи, реши да си купи книга. В книжарницата случайно попадна на туристическа карта на Родопите.
@@ -110,7 +112,7 @@ img {
 - Да те питам, къде е къщата на леля Костадинка?
 - Ам чи знам я, тя е в оня край на селото, нависоко. Ама не мога да се присетя, я ми помогни (link-reveal: &quot;като кажеш:&quot;)[
 (link-repeat: &quot;Какво ще ядете тази вечер?&quot;)[(set: $orehovoDinner to (prompt: &quot;Дай отговор&quot;, &quot;&quot;))]
-(event: when (lowercase: (string: $orehovoDinner)) is &quot;спагети&quot;)[
+(event: when (lowercase: (string: $orehovoDinner)) is in (a: &quot;спагети&quot;, &quot;паста&quot;))[
 *- Оттука се връщате назад от където сте дошли, и хващате първата вляво нагоре. Обаче не си спомням първата ли втората ли къща беше. Най-добре разпитайте още.*
 (set: $orehovoGrapndaDone to true)
 ]]
